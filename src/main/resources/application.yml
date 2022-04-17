@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: pet-project
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pet
+    username: admin
+    password: admin
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
